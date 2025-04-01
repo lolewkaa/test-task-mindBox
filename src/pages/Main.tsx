@@ -6,6 +6,7 @@ import Button from "../ui/Button/Button";
 import { clearTodos, setTodosRepo } from "../slices/todosSlice";
 import { v4 as uuidv4 } from "uuid";
 import TodosList from "../components/TodosList/TodosList";
+import DoneBoard from "../components/DoneBoard/DoneBoard";
 
 const Main: React.FC = () => {
   const [todo, setTodo] = useState("");
@@ -37,6 +38,7 @@ const Main: React.FC = () => {
   return (
     <section className={styles.main}>
       <div className={styles.main__input_box}>
+        <DoneBoard />
         <Input
           inputStyle={styles.main__input}
           handleChange={handleInputChange}
