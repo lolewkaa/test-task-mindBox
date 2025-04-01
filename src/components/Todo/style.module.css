@@ -1,0 +1,9 @@
+.todo {
+    width: 200px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.todo__text {
+    color: #696969;
+}
